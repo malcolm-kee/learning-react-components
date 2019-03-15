@@ -1,0 +1,21 @@
+{
+  "name": "learning-react-components",
+  "version": "1.0.0",
+  "description": "Learn the common practices of writing React components and React hooks.",
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malcolm-kee/learning-react-components.git"
+  },
+  "author": "Malcolm Kee <malcolm.keeweesiong@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malcolm-kee/learning-react-components/issues"
+  },
+  "homepage": "https://github.com/malcolm-kee/learning-react-components#readme",
+  "devDependencies": {
+    "mdx-deck": "^1.10.2"
+  }
+}
