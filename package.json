@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Learn the common practices of writing React components and React hooks.",
   "scripts": {
-    "start": "mdx-deck deck.mdx"
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
   },
   "repository": {
     "type": "git",

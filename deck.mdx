@@ -1,3 +1,13 @@
+import { Appear, Head } from 'mdx-deck';
+import { Invert } from 'mdx-deck/layouts';
+
+<Head>
+  <title>React Component Library</title>
+  <meta name="author" content="Malcolm Kee Wee Siong" />
+</Head>
+
+export default Invert;
+
 # React JS
 
 Creating Project Component Library
@@ -19,9 +29,10 @@ Learn to create reusable React components and create an interactive styleguide t
 
 ## Why create React components?
 
-- It makes your developement easier/faster
-- It makes your UI more consistent
-- It makes your site more accessible if the base components are accessible.
+- makes your developement easier/faster
+- makes your UI more consistent
+- minimize surface area of 3rd party dependency
+- makes your site more accessible if the base components are accessible.
 
 ---
 
@@ -36,6 +47,7 @@ Why I care, and why I hope you care too.
 - Show you how to do
 - Do it by following what I did
 - Do it yourself with different example
+- You ask question/share what you've learnt
 - Outline of the exercises are listed [here](https://github.com/malcolm-kee/learning-react-components/blob/master/README.md).
 
 ---
@@ -47,3 +59,118 @@ Refactoring [an eCommerce site](https://react-ecomm.netlify.com/).
 - the site is developed with React and Redux
 - we will refactor the React codes while learning
 - I will not explain about the Redux code but it should not be relevant
+
+---
+
+export default Invert;
+
+## Section 1: <br /> Creating Html Element Wrapper
+
+---
+
+### Demo 1a: <br />Creating `Button` component wrapping `button`.
+
+---
+
+### Exercise 1a: <br />Creating `Field` component wrapping `"form-group"`.
+
+---
+
+### Demo 1b: <br />Creating `Textare` component wrapping `textarea`.
+
+---
+
+### Exercise 1b: <br />Creating `Input` component wrapping `input`.
+
+---
+
+### Section 1 Takeaways (1/2):
+
+When creating a wrapper:
+
+1. design your props and prop defaults based on use cases; **write same code twice**.
+2. using spread operators to pass down supported props
+
+---
+
+### Section 1 Takeaways (2/2):
+
+3. merge the props or use a different props name (`classnames` and `callAll` are useful here).
+4. use `prop-types` to document your component.
+
+---
+
+export default Invert;
+
+## Section 2: <br />Creating Component wrapping components
+
+<Appear>(no, this is not higher-order component)</Appear>
+
+---
+
+### Demo 2: <br />Creating `TextareaField` component
+
+---
+
+### Exercise 2a: <br />Creating `TextField` component
+
+---
+
+### Exercise 2b: <br />Creating `Form` component
+
+---
+
+### Section 2 Takeaways:
+
+1. Compose components to bigger component that takes bigger part of UI
+1. Expose the subsection of the component separately, so other developer can compose differently.
+1. Associate input with label using `id` and `htmlFor` so it's accessible.
+
+---
+
+export default Invert;
+
+## Section 3: <br />Creating Stateful component
+
+---
+
+### Demo 3a: <br />Image with Loading Indicator
+
+---
+
+### Demo 3b: <br />Spinner with Delay
+
+---
+
+### Section 3 Takeaways:
+
+1. track state with `React.useState`.
+2. make side effect and cleanup them with `React.useEffect`.
+
+---
+
+export default Invert;
+
+## Section 4: <br />Creating Compound component
+
+Components that share implicit state
+
+---
+
+### Demo 4: <br />Field (Enhanced)
+
+associate label and input automatically
+
+---
+
+export default Invert;
+
+## Section 5: <br />Creating Component Documentations
+
+Using `react-styleguidist`
+
+---
+
+export default Invert;
+
+# More Questions?
