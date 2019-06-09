@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/malcolm-kee/learning-react-components#readme",
   "devDependencies": {
-    "mdx-deck": "^1.10.2"
+    "mdx-deck": "^2.3.2"
   }
 }
